@@ -14,6 +14,10 @@ A simple python obfuscator
 
 > 使用exec运行,只能套两层
 
+## 兼容性
+
+没有测试,但应该主流版本都行
+
 ## 实现
 
 将base64的字典打乱,然后一个一个字符拼接成源文件lzma压缩后的base64,释放后调用exec执行
