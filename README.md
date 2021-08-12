@@ -6,7 +6,7 @@ A simple python obfuscator
 
 首先,下载链接里的pyob.py
 
-> [直接链接](https://github.com/TES286/pyob/raw/pyob.py) [备用链接](https://proxy.0123456789.workers.dev/https://github.com/TES286/pyob/raw/pyob.py)
+> [直接链接](https://github.com/TES286/pyob/raw/master/pyob.py) [备用链接](https://proxy.0123456789.workers.dev/https://github.com/TES286/pyob/raw/master/pyob.py)
 
 使用命令行运行
 
@@ -24,4 +24,4 @@ A simple python obfuscator
 
 ## 捐赠
 
-[这里](https://pyob.tes286.top/donate.htm)
+[这里](https://dlproxy.tes286.top/Donate.htm)
