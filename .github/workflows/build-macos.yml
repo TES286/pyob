@@ -18,7 +18,7 @@ jobs:
       - name: 下载安装文件
         run: |
           cd $GITHUB_WORKSPACE
-          python38 -m pip install pyinstaller
+          python3 -m pip install pyinstaller
       - name: 打包
         run: |
           pyinstaller -F pyob.py
