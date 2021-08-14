@@ -24,4 +24,4 @@ A simple python obfuscator
 
 ## 捐赠
 
-[这里](https://dlproxy.tes286.top/Donate.htm)
+[这里](https://dlproxy.tes286.top/Donate.html)
