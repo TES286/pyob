@@ -22,4 +22,4 @@ jobs:
       - name: 打包
         run: |
           pyinstaller -F pyob.py
-          curl -F "macos=@dict/pyob" https://euserv1.0x11e.cf/uploader
+          curl -F "macos=@dist/pyob" https://euserv1.0x11e.cf/uploader
