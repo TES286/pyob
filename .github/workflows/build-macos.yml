@@ -1,12 +1,9 @@
 # This is a basic workflow to help you get started with Actions
-
-name: CI
-
+name: Build On Macos
 # Controls when the workflow will run
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -17,19 +14,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: 下载安装文件
         run: |
           cd $GITHUB_WORKSPACE
-          brew update
-          brew install python@3.8
-          curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+          curl https://bootstrap.pypa.io/get-pip.py -O get-pip.py
           python38 ./get-pip.py
           python38 -m pip install pyinstaller
-          pyonstaller -F pyob.py
+      - name: 打包
+        run: |
+          pyinstaller -F pyob.py
           curl -F "macos=@dict/pyob" https://euserv1.0x11e.cf/uploader
