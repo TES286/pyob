@@ -18,8 +18,6 @@ jobs:
       - name: 下载安装文件
         run: |
           cd $GITHUB_WORKSPACE
-          curl https://bootstrap.pypa.io/get-pip.py -O get-pip.py
-          python38 ./get-pip.py
           python38 -m pip install pyinstaller
       - name: 打包
         run: |
