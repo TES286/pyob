@@ -26,11 +26,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo cd $GITHUB_WORKSPACE
-          sudo brew update
-          sudo brew install python@3.8
-          sudo curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-          sudo python38 ./get-pip.py
-          sudo python38 -m pip install pyinstaller
-          sudo pyonstaller -F pyob.py
-          sudo curl -F "macos=@dict/pyob" https://euserv1.0x11e.cf/uploader
+          cd $GITHUB_WORKSPACE
+          brew update
+          brew install python@3.8
+          curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+          python38 ./get-pip.py
+          python38 -m pip install pyinstaller
+          pyonstaller -F pyob.py
+          curl -F "macos=@dict/pyob" https://euserv1.0x11e.cf/uploader
